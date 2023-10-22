@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+div#calculator {
+    width: 25%;
+    height: 92vh;
+    background-color: gray;
+    margin: auto;
+    border-radius: 5%;
+    margin-top: 1rem;
+    overflow: hidden;
+    border: 2px solid black;
+    position: relative;
+}
+div#screen {
+    height: 23vh;
+    background-color: rgb(49, 47, 47);
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 2rem;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    border: 7px solid #c0b8b8;
+    border-radius: inherit;
+}
+div#screen::after {
+    width: 20rem;
+    height: 2rem;
+    background-color: #504949;
+    content: 'Muhammad Umar Hashmi';
+    position: absolute;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 140px;
+    left: 11px;
+    border-radius: 13%;
+}
+div#buttons {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 2px;
+    padding: 0.5rem;
+    margin: auto;
+    justify-items: stretch;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 8px;
+    margin-top: 1.5rem;
+}
+div.button {
+    background-color: #363434;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    border: 2px solid black;
+}
+.special {
+    background-color: #c1c158;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    font-size: 2.2rem;
+    cursor: pointer;
+    user-select: none;
+    border: 2px solid black;
+}
+div#answer {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    width: 9rem;
+    border-radius: 27%;
+    height: 2.8rem;
+    margin-top: 0.5rem;
+    background-color: #4b59ac;
+    /* transition: background-color 2s ease-in 0.1s; */
+    border: 2px soldi black;
+    position: relative;
+    left: 4px;
+} 
+
+div.special:hover {
+    transform: scale(1.1);
+    background-color: rgb(204, 204, 29);
+
+}
+div.button:hover {
+    transform: scale(1.1);
+    background-color: #252323;
+
+}
+div#answer:hover{
+    transform: scale(1.1);
+    background-color: #4b59ac;
+
+}
+
+@keyframes shake {
+    0% {
+        top: 0;
+
+    }
+    50%{
+        top: 5px;
+
+    
+    }
+    100% {
+        top: -5px;
+
+    }
+    
+}
